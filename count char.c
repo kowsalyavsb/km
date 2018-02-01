@@ -1,15 +1,19 @@
-#include<stdio.h>
-int main()
+#include <stdio.h>
+#include <string.h>
+int  main()
 {
-int count=0,i;
-char g[40];
-scanf("%[^\n]s",g);
-for(i=0;g[i]!='\0';i++)
-{
-if(g[i]=='  ')
-count++;
+   char str[100];
+   int i = 0, l = 0, f = 1;
+  
+   puts("Enter any string\n");
+   gets(str);
+   for(i = 0; str[i] !='\0'; i++)
+   {
+      l = l + 1;
+   }
+   printf("The number of characters in the string are %d\n", l);
+   
+  return 0;
 }
-printf("%d",count+1);
-return 0;
-}
+
 
